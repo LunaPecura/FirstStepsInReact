@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+	display: flex;
+	width: fit-content;
+	height: fit-content;
+	border: solid black;
+	margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HomePage {
+	width: 300px;
+	border: solid blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.EmployeePage {
+	width: 300px;
+	border: solid seagreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Header {
+	height: 40px;
+	border: solid orange;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.SearchBar {
+	height: 40px;
+	border: solid plum;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.EmployeeList {
+	border: solid turquoise;
+	height: 400px;
+}
+
+.EmployeeListItem {
+	display: flex;
+	justify-content: space-between;
+	border: solid gray;
+	width: auto;
+	height: 75px;
+	padding: 5px;
+	margin: 2px;
+}
+
+.profilePic {
+	display: flex;
+	justify-content: space-around;
+	height: 70px;
+	margin: auto;
+	width: fit-content;
+	/* border: solid lightgray;
+	border-width: .2px; */
+	border-radius: 40%;
+}
+
+.picDiv {
+	width: 35%;
+	border: solid black;
+	border-radius: 50%;
+	background-color: black;
+	margin-right: 5px;
+}
+
+.profileDescription {
+	width: 65%;
+	text-align: left;
+	border: solid lightgray;
+	padding: 5px;
+}
+
+.profileDescriptionName {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.profileDescriptionTitle {
+	font-size: 13px;
 }

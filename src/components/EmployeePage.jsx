@@ -1,11 +1,14 @@
 import React from 'react'
 import Header from '../components/Header'
+import EmployeeSection from '../components/EmployeeSection'
 
-function EmployeePage() {
-return (
-	<div className="EmployeePage">
-		<Header content="Employee"></Header>
-	</div>
-)}
+function EmployeePage(props) {
+	return (
+		<div className="EmployeePage">
+			<Header content="Who's Who"></Header>
+			<EmployeeSection employee={props.employee} />
+		</div>
+	)
+}
 
 export default EmployeePage

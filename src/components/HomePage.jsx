@@ -2,15 +2,15 @@ import React from 'react'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 import EmployeeList from '../components/EmployeeList'
-import employees from '../models/employeeList'
 
-function HomePage() {
+
+function HomePage(props) {
 	
 return (
 	<div className="HomePage">
-		<Header content={"Employee Directory"}></Header>
+		<Header content={"Southpark Directory"} />
 		<SearchBar></SearchBar>
-		<EmployeeList employees={employees}></EmployeeList>
+		<EmployeeList employees={props.employees} setterFunction={props.setterFunction} />
 	</div>
 )}
 

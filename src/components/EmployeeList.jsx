@@ -1,10 +1,11 @@
 import React from 'react'
-import EmployeeListItem from './EmployeeListItem';
+import EmployeeListItem from './EmployeeListItem'
 
 function EmployeeList(props) {
 
-	const allEmployees = props.employees.map((e, index) => {
-		return <EmployeeListItem employee={e}></EmployeeListItem>
+	const allEmployees = props.employees.map((employee, index) => {
+		return <EmployeeListItem key={index} employee={employee} 
+					onClickFn={props.setterFunction(index)} />
 	})
 
 	return (

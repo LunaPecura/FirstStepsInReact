@@ -79,3 +79,17 @@
 .profileDescriptionTitle {
 	font-size: 13px;
 }
+
+.EmployeeSection {
+	border: solid teal;
+	border-width: 1px;
+	height: 300px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.EmployeeHeader {
+	border-bottom: solid teal;
+	border-width: 1px;
+	height: 100px;
+}

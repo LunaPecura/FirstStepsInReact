@@ -10,7 +10,7 @@ return (
 	<div className="HomePage">
 		<Header content={"Southpark Directory"} />
 		<SearchBar></SearchBar>
-		<EmployeeList employees={props.employees} setterFunction={props.setterFunction} />
+		<EmployeeList employees={props.employees} ff={props.ff} />
 	</div>
 )}
 

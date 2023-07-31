@@ -4,8 +4,11 @@ import EmployeeListItem from './EmployeeListItem'
 function EmployeeList(props) {
 
 	const allEmployees = props.employees.map((employee, index) => {
-		return <EmployeeListItem key={index} employee={employee} 
-					onClickFn={props.setterFunction(index)} />
+		const onClickFn = props.ff(index)
+		return <EmployeeListItem 
+					key={index} 
+					employee={employee} 
+					onClickFn={onClickFn} />
 	})
 
 	return (

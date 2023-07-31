@@ -7,11 +7,11 @@ import employees from './models/employeeList'
 function App() {
 
 	const [index, setIndex] = useState(0);
-	const updateIndex = (i) => () => setIndex(i);
+	const setIndexFactory = (i) => () => setIndex(i);
 
 	return (
 		<div className="App">
-			<HomePage employees={employees} setterFunction={updateIndex} />
+			<HomePage employees={employees} ff={setIndexFactory} />
 			<EmployeePage employee={employees[index]} />
 		</div>
 	)
